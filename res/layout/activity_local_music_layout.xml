@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        android:background="@drawable/bk"
+        >
+
+    <!-- 导入头布局 -->
+    <include
+            android:id="@+id/localmusic_actionbar"
+            layout="@layout/item_actionbar_layout"/>
+
+    <RadioGroup
+            android:id="@+id/localmusic_tab_head"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/localmusic_actionbar"
+            android:orientation="horizontal"
+            >
+        <RadioButton
+                style="@style/tabhost_head_radiobutton_style"
+                android:text="@string/localmusic_tabhost_head_1"
+                />
+        <RadioButton
+                style="@style/tabhost_head_radiobutton_style"
+                android:text="@string/localmusic_tabhost_head_2"
+                />
+        <RadioButton
+                style="@style/tabhost_head_radiobutton_style"
+                android:text="@string/localmusic_tabhost_head_3"
+                />
+        <RadioButton
+                style="@style/tabhost_head_radiobutton_style"
+                android:text="@string/localmusic_tabhost_head_4"
+                />
+    </RadioGroup>
+
+
+    <fragment
+            android:id="@+id/main_fragment_player"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:name="com.wg.kuwo.view.PlayToolFragment"
+            android:layout_alignParentBottom="true"
+           />
+
+    <fragment
+            android:id="@+id/localmusic_content_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/localmusic_tab_head"
+            android:layout_above="@id/main_fragment_player"
+            android:name="com.wg.kuwo.view.LocalFragment"
+            >
+
+
+    </fragment>
+
+
+</RelativeLayout>

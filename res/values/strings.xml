@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <string name="app_name">酷我</string>
+
+    <!-- 导航栏　-->
+    <string name="tabhead1">我的</string>
+    <string name="tabhead2">推荐</string>
+    <string name="tabhead3">曲库</string>
+    <string name="tabhead4">视频</string>
+    
+    <string name="my_login_text">点击登录后享受云同步</string>
+
+    <string name="main_list_item_itile1">我的音乐</string>
+    <string name="main_list_item_itile2">我的列表</string>
+
+    <string name="add_list">创建播放列表</string>
+    <string name="localmusic_actionbar_name">本地音乐</string>
+
+    <string name="localmusic_tabhost_head_1">歌曲</string>
+    <string name="localmusic_tabhost_head_2">歌手</string>
+    <string name="localmusic_tabhost_head_3">专辑</string>
+    <string name="localmusic_tabhost_head_4">文件夹</string>
+
+</resources>

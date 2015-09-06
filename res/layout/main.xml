@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bk"
+        >
+    <!--<RelativeLayout
+            android:id="@+id/main_actionbar_Rl"
+            style="@style/activity_actionbar_style"
+            android:background="#333333"
+            >
+
+    </RelativeLayout>-->
+    <!-- 导航栏   android:layout_below="@id/main_actionbar_Rl"-->
+    <RelativeLayout
+            android:id="@+id/main_table_layout"
+
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            >
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/list_item_bg"
+
+                >
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/tabhead1"
+                    style="@style/main_tabhead_style"
+                    />
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/tabhead2"
+                    style="@style/main_tabhead_style"
+                    />
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/tabhead3"
+                    style="@style/main_tabhead_style"
+                    />
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/tabhead4"
+                    style="@style/main_tabhead_style"
+                    />
+        </LinearLayout>
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/tab_item_seleced"
+                android:layout_alignParentBottom="true"
+                />
+    </RelativeLayout>
+    <fragment
+            android:id="@+id/main_fragment_player"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:name="com.wg.kuwo.view.PlayToolFragment"
+            android:layout_alignParentBottom="true"
+            tools:layout="@layout/fragment_player_tool_layout"/>
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/main_fragment_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/main_table_layout"
+            android:layout_above="@id/main_fragment_player"
+
+            >
+
+    </android.support.v4.view.ViewPager>
+
+
+
+
+
+</RelativeLayout>
+

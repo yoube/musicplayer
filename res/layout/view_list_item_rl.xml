@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="30dp"
+                android:minHeight="60dp"
+
+        >
+    <ImageView
+            android:id="@+id/list_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/recom_top_local"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            />
+    <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/list_icon"
+                    android:layout_centerVertical="true"
+            >
+
+
+        <TextView
+                android:id="@+id/list_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本地歌曲"
+                android:textSize="17sp"
+                />
+        <TextView
+                android:id="@+id/list_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="70首歌曲"
+                android:textSize="14sp"
+                android:layout_below="@id/list_name"
+                />
+    </RelativeLayout>
+    <ImageView
+            android:id="@+id/list_right_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nowplayplay_normal"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+</RelativeLayout>

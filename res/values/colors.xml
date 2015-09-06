@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="textColor">#FFFFFF</color>
+    <color name="list_item_bg">#33FFFFFF</color>
+
+    <color name="local_iocn">#AEEAEA</color>
+    <color name="autoer_text">#CBDDE6</color>
+</resources>
